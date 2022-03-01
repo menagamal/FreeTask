@@ -24,6 +24,8 @@
 		D02B433227CE5FCB0073E471 /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B433127CE5FCA0073E471 /* ApiTarget.swift */; };
 		D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DA27CE666B005FA2D9 /* ListVehiclesServices.swift */; };
 		D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */; };
+		D0E3C3DF27CE68D7005FA2D9 /* ListVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DE27CE68D7005FA2D9 /* ListVehicleViewModel.swift */; };
+		D0E3C3E127CE6901005FA2D9 /* ListDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E027CE6901005FA2D9 /* ListDataBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		D02B433127CE5FCA0073E471 /* ApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTarget.swift; sourceTree = "<group>"; };
 		D0E3C3DA27CE666B005FA2D9 /* ListVehiclesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehiclesServices.swift; sourceTree = "<group>"; };
 		D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleResponse.swift; sourceTree = "<group>"; };
+		D0E3C3DE27CE68D7005FA2D9 /* ListVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleViewModel.swift; sourceTree = "<group>"; };
+		D0E3C3E027CE6901005FA2D9 /* ListDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +206,7 @@
 		D02B432727CE5B4F0073E471 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3DE27CE68D7005FA2D9 /* ListVehicleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 		D02B432E27CE5F2E0073E471 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3E027CE6901005FA2D9 /* ListDataBuilder.swift */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -494,7 +500,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D02B433027CE5FBA0073E471 /* BaseNetworkService.swift in Sources */,
+				D0E3C3E127CE6901005FA2D9 /* ListDataBuilder.swift in Sources */,
 				D02B42F927CE4AA70073E471 /* ViewController.swift in Sources */,
+				D0E3C3DF27CE68D7005FA2D9 /* ListVehicleViewModel.swift in Sources */,
 				D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */,
 				D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */,
 				D02B42F527CE4AA70073E471 /* AppDelegate.swift in Sources */,

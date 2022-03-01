@@ -10,22 +10,16 @@ import Moya
 import RxSwift
 
 class BaseNetworkService {
-    let provider: MoyaProvider<MultiTarget>
-
-    init(provider: MoyaProvider<MultiTarget>) {
-        self.provider = provider
-    }
-    
-    func mapResult<T:Codable>(target: MultiTarget) -> Observable<Result<T?, NetworkServiceErrors>> {
+    func mapResult<T:Codable>(provider: MoyaProvider<MultiTarget>, target: MultiTarget) -> Observable<Result<T?, NetworkServiceErrors>> {
         Observable.create { observer in
-            self.mapResult(target: target) { (result: Result<T?, NetworkServiceErrors>) in
+            self.mapResult(provider: provider, target: target) { (result: Result<T?, NetworkServiceErrors>) in
                 observer.onNext(result)
             }
             return Disposables.create()
         }
     }
     
-    private func mapResult<T:Codable>(target: MultiTarget, completion: @escaping (Result<T?, NetworkServiceErrors>) -> Void) {
+    private func mapResult<T:Codable>(provider: MoyaProvider<MultiTarget>, target: MultiTarget, completion: @escaping (Result<T?, NetworkServiceErrors>) -> Void) {
         provider.request(target.debugLog()) { result in
             switch result {
             case .success(let response):

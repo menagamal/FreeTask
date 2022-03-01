@@ -52,7 +52,7 @@ extension ApiTarget: TargetType {
                 "p2Lon": p2Lon
                 
             ]
-            return .requestCompositeParameters(bodyParameters: [String:Any](), bodyEncoding: JSONEncoding.default, urlParameters: urlParams)
+            return .requestParameters(parameters: urlParams, encoding: URLEncoding.queryString)
         }
     }
     
