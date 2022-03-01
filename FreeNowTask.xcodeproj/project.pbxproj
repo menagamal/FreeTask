@@ -26,6 +26,9 @@
 		D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */; };
 		D0E3C3DF27CE68D7005FA2D9 /* ListVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DE27CE68D7005FA2D9 /* ListVehicleViewModel.swift */; };
 		D0E3C3E127CE6901005FA2D9 /* ListDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E027CE6901005FA2D9 /* ListDataBuilder.swift */; };
+		D0E3C3E527CE84D9005FA2D9 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E327CE84D9005FA2D9 /* DataTableViewCell.swift */; };
+		D0E3C3E627CE84D9005FA2D9 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E3C3E427CE84D9005FA2D9 /* DataTableViewCell.xib */; };
+		D0E3C3E927CE91C0005FA2D9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +78,9 @@
 		D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleResponse.swift; sourceTree = "<group>"; };
 		D0E3C3DE27CE68D7005FA2D9 /* ListVehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleViewModel.swift; sourceTree = "<group>"; };
 		D0E3C3E027CE6901005FA2D9 /* ListDataBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataBuilder.swift; sourceTree = "<group>"; };
+		D0E3C3E327CE84D9005FA2D9 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		D0E3C3E427CE84D9005FA2D9 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +159,7 @@
 		D02B42F327CE4AA70073E471 /* FreeNowTask */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3E727CE91AC005FA2D9 /* Extensions */,
 				D0E3C3D927CE6624005FA2D9 /* Base */,
 				D02B432B27CE5E3F0073E471 /* Helpers */,
 				D02B432A27CE5E060073E471 /* Modules */,
@@ -197,6 +204,7 @@
 		D02B432627CE5B4B0073E471 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3E227CE849C005FA2D9 /* Cells */,
 				D02B42F827CE4AA70073E471 /* ViewController.swift */,
 				D02B42FA27CE4AA70073E471 /* Main.storyboard */,
 			);
@@ -258,6 +266,23 @@
 				D02B432F27CE5FBA0073E471 /* BaseNetworkService.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D0E3C3E227CE849C005FA2D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3E327CE84D9005FA2D9 /* DataTableViewCell.swift */,
+				D0E3C3E427CE84D9005FA2D9 /* DataTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D0E3C3E727CE91AC005FA2D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,6 +397,7 @@
 				D02B430127CE4AA80073E471 /* LaunchScreen.storyboard in Resources */,
 				D02B42FE27CE4AA80073E471 /* Assets.xcassets in Resources */,
 				D02B42FC27CE4AA70073E471 /* Main.storyboard in Resources */,
+				D0E3C3E627CE84D9005FA2D9 /* DataTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,8 +531,10 @@
 				D0E3C3DF27CE68D7005FA2D9 /* ListVehicleViewModel.swift in Sources */,
 				D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */,
 				D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */,
+				D0E3C3E927CE91C0005FA2D9 /* UIView+Extensions.swift in Sources */,
 				D02B42F527CE4AA70073E471 /* AppDelegate.swift in Sources */,
 				D02B42F727CE4AA70073E471 /* SceneDelegate.swift in Sources */,
+				D0E3C3E527CE84D9005FA2D9 /* DataTableViewCell.swift in Sources */,
 				D02B433227CE5FCB0073E471 /* ApiTarget.swift in Sources */,
 				D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */,
 			);

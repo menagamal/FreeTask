@@ -82,7 +82,7 @@ extension Response {
         #if DEBUG
         debugPrint("=======================================")
         debugPrint(self)
-        debugPrint(String(data: self.data, encoding: .utf8))
+        debugPrint(String(data: self.data, encoding: .utf8) ?? "")
         debugPrint("=======================================")
         #endif
         return self
