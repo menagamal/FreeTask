@@ -20,6 +20,10 @@
 		D02B431627CE4AA80073E471 /* FreeNowTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B431527CE4AA80073E471 /* FreeNowTaskUITests.swift */; };
 		D02B431827CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B431727CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift */; };
 		D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B432C27CE5E510073E471 /* LoadingView.swift */; };
+		D02B433027CE5FBA0073E471 /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B432F27CE5FBA0073E471 /* BaseNetworkService.swift */; };
+		D02B433227CE5FCB0073E471 /* ApiTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B433127CE5FCA0073E471 /* ApiTarget.swift */; };
+		D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DA27CE666B005FA2D9 /* ListVehiclesServices.swift */; };
+		D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		D02B431527CE4AA80073E471 /* FreeNowTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTaskUITests.swift; sourceTree = "<group>"; };
 		D02B431727CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D02B432C27CE5E510073E471 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		D02B432F27CE5FBA0073E471 /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
+		D02B433127CE5FCA0073E471 /* ApiTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTarget.swift; sourceTree = "<group>"; };
+		D0E3C3DA27CE666B005FA2D9 /* ListVehiclesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehiclesServices.swift; sourceTree = "<group>"; };
+		D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVehicleResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,7 @@
 		D02B42F327CE4AA70073E471 /* FreeNowTask */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3D927CE6624005FA2D9 /* Base */,
 				D02B432B27CE5E3F0073E471 /* Helpers */,
 				D02B432A27CE5E060073E471 /* Modules */,
 				D02B432927CE5DD40073E471 /* Network */,
@@ -173,6 +182,7 @@
 		D02B432527CE5B3C0073E471 /* ListDataViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D02B432E27CE5F2E0073E471 /* Builder */,
 				D02B432827CE5B550073E471 /* Model */,
 				D02B432727CE5B4F0073E471 /* ViewModel */,
 				D02B432627CE5B4B0073E471 /* View */,
@@ -199,6 +209,7 @@
 		D02B432827CE5B550073E471 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3DC27CE674D005FA2D9 /* ListVehicleResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -206,6 +217,8 @@
 		D02B432927CE5DD40073E471 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D02B433127CE5FCA0073E471 /* ApiTarget.swift */,
+				D0E3C3DA27CE666B005FA2D9 /* ListVehiclesServices.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -224,6 +237,21 @@
 				D02B432C27CE5E510073E471 /* LoadingView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D02B432E27CE5F2E0073E471 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		D0E3C3D927CE6624005FA2D9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D02B432F27CE5FBA0073E471 /* BaseNetworkService.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,10 +493,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02B433027CE5FBA0073E471 /* BaseNetworkService.swift in Sources */,
 				D02B42F927CE4AA70073E471 /* ViewController.swift in Sources */,
+				D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */,
 				D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */,
 				D02B42F527CE4AA70073E471 /* AppDelegate.swift in Sources */,
 				D02B42F727CE4AA70073E471 /* SceneDelegate.swift in Sources */,
+				D02B433227CE5FCB0073E471 /* ApiTarget.swift in Sources */,
+				D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
