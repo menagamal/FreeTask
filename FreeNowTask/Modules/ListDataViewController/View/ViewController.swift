@@ -21,12 +21,22 @@ class ListDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadingIndicator = LoadingView(name: "loading", vc: self)
+        setupNavigationBar()
         setupTableView()
         viewModel?.fetchListData()
         bindUI()
-        
     }
     
+    private func setupNavigationBar() {
+        self.title = "Available Trips"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Maps", style: .plain, target: self, action: #selector(showMapsView))
+    }
+    
+    @objc
+    private func showMapsView() {
+        viewModel?.navigateToMaps()
+    }
+
     private func setupTableView() {
         dataTableView.register(UINib(nibName: "DataTableViewCell", bundle: nil), forCellReuseIdentifier: "DataTableViewCell")
     }
@@ -48,6 +58,10 @@ class ListDataViewController: UIViewController {
             cell.configure(title: model.type.rawValue, subTitle: model.state.rawValue)
             cell.selectionStyle = .none
         }.disposed(by: disposeBag)
+        
+        viewModel?.polist?.subscribe(onNext: { [weak self] list in
+            self?.viewModel?.list = list
+        }).disposed(by: disposeBag)
     }
 }
 

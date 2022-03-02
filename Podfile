@@ -6,11 +6,11 @@ target 'FreeNowTask' do
   use_frameworks!
 
   # Pods for FreeNowTask
-pod 'RxSwift'
-pod 'RxCocoa'
-pod 'Moya'
-pod 'Moya/ReactiveSwift', '~> 14.0'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Moya'
+  pod 'Moya/ReactiveSwift', '~> 14.0'
+  
   target 'FreeNowTaskTests' do
     inherit! :search_paths
     # Pods for testing

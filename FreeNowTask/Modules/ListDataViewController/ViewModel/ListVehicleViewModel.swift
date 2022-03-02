@@ -9,7 +9,8 @@ import Foundation
 import RxSwift
 
 class ListVehicleViewModel {
-    private var service: ListVehiclesServicesUseCase
+    private let service: ListVehiclesServicesUseCase
+    private let router: ListRouter
     private let P1_LAT = 53.694865
     private let P2_LAT = 53.394655
     private let P1_LON = 9.757589
@@ -18,9 +19,10 @@ class ListVehicleViewModel {
     // MARK: OUTPUT
     var polist: Observable<[PoiList]>?
     var isLoading: BehaviorSubject<Bool> = BehaviorSubject(value: false)
-    
-    init(service: ListVehiclesServicesUseCase) {
+    var list = [PoiList]()
+    init(service: ListVehiclesServicesUseCase, router: ListRouter) {
         self.service = service
+        self.router = router
     }
 
     func fetchListData() {
@@ -31,5 +33,9 @@ class ListVehicleViewModel {
             guard let self = self else { return }
             self.isLoading.onNext(false)
         })
+    }
+    
+    func navigateToMaps() {
+        router.navigate(to: .openMaps(polist: list))
     }
 }

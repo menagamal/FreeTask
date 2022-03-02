@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X69-8N-AJb">
-                                <rect key="frame" x="12" y="68" width="390" height="782"/>
+                                <rect key="frame" x="12" y="44" width="390" height="806"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -26,7 +26,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X69-8N-AJb" secondAttribute="trailing" constant="12" id="GGc-cO-QOc"/>
                             <constraint firstItem="X69-8N-AJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Hsu-c9-bFB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X69-8N-AJb" secondAttribute="bottom" constant="12" id="ZmY-f1-Ftl"/>
-                            <constraint firstItem="X69-8N-AJb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="kns-AW-NwG"/>
+                            <constraint firstItem="X69-8N-AJb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kns-AW-NwG"/>
                         </constraints>
                     </view>
                     <connections>

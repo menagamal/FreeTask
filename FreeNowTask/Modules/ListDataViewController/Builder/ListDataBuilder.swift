@@ -12,9 +12,10 @@ import Moya
 class ListDataBuilder {
     func instantiate() -> UIViewController {
         let service = ListVehiclesServices()
-        let viewModel = ListVehicleViewModel(service: service)
         let main = UIStoryboard(name: "Main", bundle: nil)
         if let vc = main.instantiateInitialViewController() as? ListDataViewController {
+            let router = ListRouterImp(rootViewController: vc)
+            let viewModel = ListVehicleViewModel(service: service,router: router)
             vc.viewModel = viewModel
             return vc
         }

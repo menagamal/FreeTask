@@ -29,6 +29,15 @@
 		D0E3C3E527CE84D9005FA2D9 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E327CE84D9005FA2D9 /* DataTableViewCell.swift */; };
 		D0E3C3E627CE84D9005FA2D9 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E3C3E427CE84D9005FA2D9 /* DataTableViewCell.xib */; };
 		D0E3C3E927CE91C0005FA2D9 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */; };
+		D0E3C3EE27CFBFD5005FA2D9 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3EC27CFBFD5005FA2D9 /* MapsViewController.swift */; };
+		D0E3C3EF27CFBFD5005FA2D9 /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E3C3ED27CFBFD5005FA2D9 /* MapsViewController.xib */; };
+		D0E3C3F527CFC6D0005FA2D9 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3F427CFC6D0005FA2D9 /* MapsViewModel.swift */; };
+		D0E3C3F727CFC6EA005FA2D9 /* MapsViewControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3F627CFC6EA005FA2D9 /* MapsViewControllerBuilder.swift */; };
+		D0E3C3FA27D002A5005FA2D9 /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3F927D002A5005FA2D9 /* ListRouter.swift */; };
+		D0E3C3FC27D00623005FA2D9 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3FB27D00623005FA2D9 /* UIViewController+Extensions.swift */; };
+		D0E3C3FE27D00D7C005FA2D9 /* TaxiAnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3FD27D00D7C005FA2D9 /* TaxiAnotationModel.swift */; };
+		D0E3C40227D01401005FA2D9 /* TaxiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C40027D01401005FA2D9 /* TaxiCollectionViewCell.swift */; };
+		D0E3C40327D01401005FA2D9 /* TaxiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E3C40127D01401005FA2D9 /* TaxiCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,15 @@
 		D0E3C3E327CE84D9005FA2D9 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		D0E3C3E427CE84D9005FA2D9 /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
 		D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		D0E3C3EC27CFBFD5005FA2D9 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		D0E3C3ED27CFBFD5005FA2D9 /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
+		D0E3C3F427CFC6D0005FA2D9 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		D0E3C3F627CFC6EA005FA2D9 /* MapsViewControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewControllerBuilder.swift; sourceTree = "<group>"; };
+		D0E3C3F927D002A5005FA2D9 /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		D0E3C3FB27D00623005FA2D9 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		D0E3C3FD27D00D7C005FA2D9 /* TaxiAnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiAnotationModel.swift; sourceTree = "<group>"; };
+		D0E3C40027D01401005FA2D9 /* TaxiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiCollectionViewCell.swift; sourceTree = "<group>"; };
+		D0E3C40127D01401005FA2D9 /* TaxiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxiCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +211,7 @@
 		D02B432527CE5B3C0073E471 /* ListDataViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3F827D0027F005FA2D9 /* Coordinator */,
 				D02B432E27CE5F2E0073E471 /* Builder */,
 				D02B432827CE5B550073E471 /* Model */,
 				D02B432727CE5B4F0073E471 /* ViewModel */,
@@ -239,6 +258,7 @@
 		D02B432A27CE5E060073E471 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D0E3C3EB27CFBF93005FA2D9 /* MapsViewController */,
 				D02B432527CE5B3C0073E471 /* ListDataViewController */,
 			);
 			path = Modules;
@@ -281,8 +301,71 @@
 			isa = PBXGroup;
 			children = (
 				D0E3C3E827CE91C0005FA2D9 /* UIView+Extensions.swift */,
+				D0E3C3FB27D00623005FA2D9 /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0E3C3EB27CFBF93005FA2D9 /* MapsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3F327CFC68D005FA2D9 /* Builder */,
+				D0E3C3F227CFC686005FA2D9 /* Model */,
+				D0E3C3F127CFC678005FA2D9 /* ViewModel */,
+				D0E3C3F027CFC671005FA2D9 /* View */,
+			);
+			path = MapsViewController;
+			sourceTree = "<group>";
+		};
+		D0E3C3F027CFC671005FA2D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3FF27D013F1005FA2D9 /* Cells */,
+				D0E3C3EC27CFBFD5005FA2D9 /* MapsViewController.swift */,
+				D0E3C3ED27CFBFD5005FA2D9 /* MapsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0E3C3F127CFC678005FA2D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3F427CFC6D0005FA2D9 /* MapsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D0E3C3F227CFC686005FA2D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3FD27D00D7C005FA2D9 /* TaxiAnotationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D0E3C3F327CFC68D005FA2D9 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3F627CFC6EA005FA2D9 /* MapsViewControllerBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		D0E3C3F827D0027F005FA2D9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C3F927D002A5005FA2D9 /* ListRouter.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		D0E3C3FF27D013F1005FA2D9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D0E3C40027D01401005FA2D9 /* TaxiCollectionViewCell.swift */,
+				D0E3C40127D01401005FA2D9 /* TaxiCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,8 +477,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E3C40327D01401005FA2D9 /* TaxiCollectionViewCell.xib in Resources */,
 				D02B430127CE4AA80073E471 /* LaunchScreen.storyboard in Resources */,
 				D02B42FE27CE4AA80073E471 /* Assets.xcassets in Resources */,
+				D0E3C3EF27CFBFD5005FA2D9 /* MapsViewController.xib in Resources */,
 				D02B42FC27CE4AA70073E471 /* Main.storyboard in Resources */,
 				D0E3C3E627CE84D9005FA2D9 /* DataTableViewCell.xib in Resources */,
 			);
@@ -525,17 +610,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E3C3EE27CFBFD5005FA2D9 /* MapsViewController.swift in Sources */,
+				D0E3C3FE27D00D7C005FA2D9 /* TaxiAnotationModel.swift in Sources */,
+				D0E3C3F527CFC6D0005FA2D9 /* MapsViewModel.swift in Sources */,
 				D02B433027CE5FBA0073E471 /* BaseNetworkService.swift in Sources */,
 				D0E3C3E127CE6901005FA2D9 /* ListDataBuilder.swift in Sources */,
 				D02B42F927CE4AA70073E471 /* ViewController.swift in Sources */,
+				D0E3C3FC27D00623005FA2D9 /* UIViewController+Extensions.swift in Sources */,
 				D0E3C3DF27CE68D7005FA2D9 /* ListVehicleViewModel.swift in Sources */,
+				D0E3C3F727CFC6EA005FA2D9 /* MapsViewControllerBuilder.swift in Sources */,
 				D0E3C3DB27CE666B005FA2D9 /* ListVehiclesServices.swift in Sources */,
 				D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */,
+				D0E3C40227D01401005FA2D9 /* TaxiCollectionViewCell.swift in Sources */,
 				D0E3C3E927CE91C0005FA2D9 /* UIView+Extensions.swift in Sources */,
 				D02B42F527CE4AA70073E471 /* AppDelegate.swift in Sources */,
 				D02B42F727CE4AA70073E471 /* SceneDelegate.swift in Sources */,
 				D0E3C3E527CE84D9005FA2D9 /* DataTableViewCell.swift in Sources */,
 				D02B433227CE5FCB0073E471 /* ApiTarget.swift in Sources */,
+				D0E3C3FA27D002A5005FA2D9 /* ListRouter.swift in Sources */,
 				D0E3C3DD27CE674D005FA2D9 /* ListVehicleResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
