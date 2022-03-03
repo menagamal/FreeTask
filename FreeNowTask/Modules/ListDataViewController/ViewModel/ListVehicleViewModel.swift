@@ -38,4 +38,10 @@ class ListVehicleViewModel {
     func navigateToMaps() {
         router.navigate(to: .openMaps(polist: list))
     }
+    
+    func navigateToMaps(with index:Int) {
+        if list.indices.contains(index) {
+            router.navigate(to: .showOnMap(location: list[index]))
+        }
+    }
 }

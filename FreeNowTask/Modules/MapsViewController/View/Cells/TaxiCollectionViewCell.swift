@@ -8,8 +8,8 @@
 import UIKit
 
 class TaxiCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var labelTitle: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    @IBOutlet private weak var labelTitle: UILabel!
+    func configure(with name: String) {
+        labelTitle.text = name
     }
 }

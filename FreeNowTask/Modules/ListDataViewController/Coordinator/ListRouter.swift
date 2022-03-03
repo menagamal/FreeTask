@@ -18,7 +18,7 @@ protocol ListRouter: AnyObject {
 class ListRouterImp: ListRouter {
   
     enum Destination {
-        case showOnMap(latitude: CLLocationDegrees, longitude: CLLocationDegrees, name: String)
+        case showOnMap(location: PoiList)
         case openMaps(polist: [PoiList])
     }
     
@@ -44,26 +44,11 @@ private extension ListRouterImp {
     
     func makeViewController(for destination: Destination) -> UIViewController? {
         switch destination {
-        case .showOnMap(let lat, let lon, let name):
-            openInMaps(latitude: lat, longitude: lon, name: name)
-            return nil
+        case .showOnMap(let location):
+            return MapsViewControllerBuilder().instantiate(polist: [location])
         case .openMaps(let polist):
             return MapsViewControllerBuilder().instantiate(polist: polist)
         }
-    }
-    
-    func openInMaps(latitude: CLLocationDegrees, longitude: CLLocationDegrees, name: String) {
-        let regionDistance:CLLocationDistance = 10000
-        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
-        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
-        let options = [
-            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
-            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
-        ]
-        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
-        let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = name
-        mapItem.openInMaps(launchOptions: options)
     }
 }
 

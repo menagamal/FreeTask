@@ -48,6 +48,8 @@ extension MapsViewController: UICollectionViewDataSource, UICollectionViewDelega
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TaxiCollectionViewCell", for: indexPath) as? TaxiCollectionViewCell else {
             return UICollectionViewCell()
         }
+        let title = viewModel?.taxiMarkers[indexPath.row].title ?? ""
+        cell.configure(with: title)
         return cell
     }
     
