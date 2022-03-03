@@ -45,4 +45,15 @@ class BaseNetworkService {
 
 enum NetworkServiceErrors: Error {
     case ParsingError, NetworkError(message: String), NotFound
+    
+    var customMessage: String {
+        switch self {
+        case .ParsingError:
+            return "Something Went wrong while getting response"
+        case .NetworkError(let message):
+            return message
+        case .NotFound:
+            return "Server is not found"
+        }
+    }
 }

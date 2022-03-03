@@ -18,6 +18,7 @@ class ListVehicleViewModel {
     
     // MARK: OUTPUT
     var polist: Observable<[PoiList]>?
+    var error: Observable<String>?
     var isLoading: BehaviorSubject<Bool> = BehaviorSubject(value: false)
     var list = [PoiList]()
     init(service: ListVehiclesServicesUseCase, router: ListRouter) {
@@ -27,11 +28,18 @@ class ListVehicleViewModel {
 
     func fetchListData() {
         isLoading.onNext(true)
-        polist = service.getVehicleData(p1Lat: P1_LAT, p1Lon: P1_LON, p2Lat: P2_LAT, p2Lon: P2_LON).map({
+        let networkCall = service.getVehicleData(p1Lat: P1_LAT, p1Lon: P1_LON, p2Lat: P2_LAT, p2Lon: P2_LON)
+        
+        polist = networkCall.map({
             return try $0.get()?.poiList ?? []
         }).do(onNext: { [weak self] _ in
             guard let self = self else { return }
             self.isLoading.onNext(false)
+        }).catchErrorJustReturn([])
+
+        error = networkCall.compactMap({  (result) -> String in
+            guard case let .failure(customError) = result else { return "" }
+            return customError.customMessage
         })
     }
     

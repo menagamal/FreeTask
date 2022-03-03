@@ -62,7 +62,7 @@ class ListDataViewController: UIViewController {
         dataTableView.rx.itemSelected
           .subscribe(onNext: { [weak self] indexPath in
               self?.viewModel?.navigateToMaps(with: indexPath.row)
-          }).addDisposableTo(disposeBag)
+          }).disposed(by: disposeBag)
         
         viewModel?.polist?.subscribe(onNext: { [weak self] list in
             self?.viewModel?.list = list

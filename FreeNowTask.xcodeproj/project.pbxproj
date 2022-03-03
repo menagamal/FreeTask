@@ -16,7 +16,6 @@
 		D02B42FC27CE4AA70073E471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02B42FA27CE4AA70073E471 /* Main.storyboard */; };
 		D02B42FE27CE4AA80073E471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D02B42FD27CE4AA80073E471 /* Assets.xcassets */; };
 		D02B430127CE4AA80073E471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D02B42FF27CE4AA80073E471 /* LaunchScreen.storyboard */; };
-		D02B430C27CE4AA80073E471 /* FreeNowTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B430B27CE4AA80073E471 /* FreeNowTaskTests.swift */; };
 		D02B431627CE4AA80073E471 /* FreeNowTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B431527CE4AA80073E471 /* FreeNowTaskUITests.swift */; };
 		D02B431827CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B431727CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift */; };
 		D02B432D27CE5E510073E471 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02B432C27CE5E510073E471 /* LoadingView.swift */; };
@@ -38,6 +37,11 @@
 		D0E3C3FE27D00D7C005FA2D9 /* TaxiAnotationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C3FD27D00D7C005FA2D9 /* TaxiAnotationModel.swift */; };
 		D0E3C40227D01401005FA2D9 /* TaxiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E3C40027D01401005FA2D9 /* TaxiCollectionViewCell.swift */; };
 		D0E3C40327D01401005FA2D9 /* TaxiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E3C40127D01401005FA2D9 /* TaxiCollectionViewCell.xib */; };
+		D0E8ACE327D1058800CE2975 /* ListDataViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8ACE227D1058800CE2975 /* ListDataViewModelTests.swift */; };
+		D0E8ACE527D105A400CE2975 /* NetworkSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8ACE427D105A400CE2975 /* NetworkSuccessMock.swift */; };
+		D0E8ACE827D10B7A00CE2975 /* NetworkFailedMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8ACE727D10B7A00CE2975 /* NetworkFailedMock.swift */; };
+		D0E8ACEA27D10B8100CE2975 /* ListRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8ACE927D10B8100CE2975 /* ListRouterMock.swift */; };
+		D0E8ACEC27D126E800CE2975 /* MapsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8ACEB27D126E800CE2975 /* MapsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +80,6 @@
 		D02B430027CE4AA80073E471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D02B430227CE4AA80073E471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D02B430727CE4AA80073E471 /* FreeNowTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D02B430B27CE4AA80073E471 /* FreeNowTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTaskTests.swift; sourceTree = "<group>"; };
 		D02B431127CE4AA80073E471 /* FreeNowTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeNowTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D02B431527CE4AA80073E471 /* FreeNowTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTaskUITests.swift; sourceTree = "<group>"; };
 		D02B431727CE4AA80073E471 /* FreeNowTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNowTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +102,11 @@
 		D0E3C3FD27D00D7C005FA2D9 /* TaxiAnotationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiAnotationModel.swift; sourceTree = "<group>"; };
 		D0E3C40027D01401005FA2D9 /* TaxiCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxiCollectionViewCell.swift; sourceTree = "<group>"; };
 		D0E3C40127D01401005FA2D9 /* TaxiCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaxiCollectionViewCell.xib; sourceTree = "<group>"; };
+		D0E8ACE227D1058800CE2975 /* ListDataViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataViewModelTests.swift; sourceTree = "<group>"; };
+		D0E8ACE427D105A400CE2975 /* NetworkSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSuccessMock.swift; sourceTree = "<group>"; };
+		D0E8ACE727D10B7A00CE2975 /* NetworkFailedMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFailedMock.swift; sourceTree = "<group>"; };
+		D0E8ACE927D10B8100CE2975 /* ListRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterMock.swift; sourceTree = "<group>"; };
+		D0E8ACEB27D126E800CE2975 /* MapsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +202,11 @@
 		D02B430A27CE4AA80073E471 /* FreeNowTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				D02B430B27CE4AA80073E471 /* FreeNowTaskTests.swift */,
+				D0E8ACE227D1058800CE2975 /* ListDataViewModelTests.swift */,
+				D0E8ACE427D105A400CE2975 /* NetworkSuccessMock.swift */,
+				D0E8ACE727D10B7A00CE2975 /* NetworkFailedMock.swift */,
+				D0E8ACE927D10B8100CE2975 /* ListRouterMock.swift */,
+				D0E8ACEB27D126E800CE2975 /* MapsViewModelTests.swift */,
 			);
 			path = FreeNowTaskTests;
 			sourceTree = "<group>";
@@ -444,6 +456,7 @@
 					};
 					D02B430627CE4AA80073E471 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = D02B42F027CE4AA70073E471;
 					};
 					D02B431027CE4AA80073E471 = {
@@ -636,7 +649,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D02B430C27CE4AA80073E471 /* FreeNowTaskTests.swift in Sources */,
+				D0E8ACEC27D126E800CE2975 /* MapsViewModelTests.swift in Sources */,
+				D0E8ACE827D10B7A00CE2975 /* NetworkFailedMock.swift in Sources */,
+				D0E8ACE527D105A400CE2975 /* NetworkSuccessMock.swift in Sources */,
+				D0E8ACEA27D10B8100CE2975 /* ListRouterMock.swift in Sources */,
+				D0E8ACE327D1058800CE2975 /* ListDataViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +881,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RHBB3377R2;
@@ -890,6 +908,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RHBB3377R2;
